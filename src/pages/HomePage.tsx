@@ -21,7 +21,7 @@ const HomePage = () => {
           onChange={(e) => setApi(e.target.value)} 
           disabled={process.env.REACT_APP_API_URL?.length ? true : false} 
           size="large" 
-          placeholder="add your api url or check on netlify url" 
+          placeholder="api url without path" 
           value={api} 
           addonAfter="products" 
         />
@@ -29,7 +29,7 @@ const HomePage = () => {
           onChange={(e) => setToken(e.target.value)} 
           disabled={process.env.REACT_APP_AUTH_TOKEN?.length ? true : false} 
           size="large" 
-          placeholder="add your auth token" 
+          placeholder="auth token" 
           value={token} 
         />
         <Button onClick={HandleSubmit} type="primary">AUTH</Button>
