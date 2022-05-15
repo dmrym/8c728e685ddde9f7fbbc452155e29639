@@ -20,7 +20,7 @@ const ProductsPage = () => {
       .catch(() => {
         navigate("/");
       });
-  });
+  }, [dispatch, navigate]);
   return (
     <>
       <FilterBar name="search" size="large" onChange={(e: any) => dispatch(Actions.setSearch(e.target.value))} placeholder="Search products" />
